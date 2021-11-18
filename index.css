@@ -176,6 +176,7 @@
 footer {
     background: var(--cor-um);
     display: grid;
+    column-gap: 3.5rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
 }
