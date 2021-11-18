@@ -1,0 +1,82 @@
+:root {
+    --ff-um: "Roboto", sans-serif;
+    --fs-um: 1.125rem;
+    --fs-dois: 2.125rem;
+    --fs-tres: 2.25rem;
+    --cor-um: black;
+    --cor-dois: white;
+    --cor-tres: gold;
+}
+
+.banner {
+    width: 100vw;
+    height: 80vh;
+    background: url("https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1965&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner p {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: var(--cor-tres);
+    text-align: center;
+    position: relative;
+}
+
+.banner__texto1 {
+    position: relative;
+    top: 10rem;
+}
+
+.banner__texto2 {
+    top: 18rem;   
+}
+
+.destaques {
+    
+}
+
+.destaques h2 {
+    padding: 1rem;
+    font-size: 30px;
+    color: var(--cor-dois);
+    background: var(--cor-um);
+    display: flex;
+    flex-direction: column;
+}
+
+.destaques h2 span {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--cor-tres);
+}
+
+.cards {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    height: minmax(200px, 300px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__titulo {
+    font-size: 28px;
+    font-weight: 400;
+    max-width: 13ch;
+    color: var(--cor-dois);
+    margin-bottom: 2.3rem;
+}
+
+.card__informacao p {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--cor-dois);
+}
