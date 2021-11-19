@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="artigos.css" type="text/css">
+    <link rel="stylesheet" href="artigo.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>health+ | Apresentamos o health plus!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="fileira1">
+                <h1 class="nav__logo">
+                    <a href="index.html">
+                        health<span>+</span>
+                    </a>
+                </h1>
+                <div class="nav__ativador-div">
+                    <button class="nav__ativador">
+                        <span class="material-icons-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!--Este UL precisa ficar fora do nav porque se não o
+        grid faz elel cobrir a página inteira e não permite
+        clicar em links-->
+        <ul class="nav__menu-lateral">
+            <li><a href="index.html">Início</a></li>
+            <li><h3>Artigos</h3></li>
+            <li><a href="#">Todos</a></li>
+            <li><a href="#">Em Destaque</a></li>
+            <li><h3>Mais</h3></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <article class="artigo">
+            <div class="artigo__imagem" id="apresentamos_o_health_plus">
+            
+            </div>
+            <div class="artigo__conteudo">
+                <h2 class="artigo__titulo">
+                    Apresentamos o health+!
+                </h2>
+                <div class="artigo__informacoes">
+                    <p>Autor: Fulano</p>
+                    <p>Publicado em: 18 de Novembro, 2021</p>
+                    <p>Tempo de leitura: 2 minutos</p>
+                </div>
+                <div class="artigo__texto">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nisi mollitia omnis voluptatum, possimus nostrum, deleniti quibusdam cupiditate asperiores at laboriosam maxime magni et aliquam?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas enim eaque, sit nemo sint voluptatibus?
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, vitae.
+                    </p>
+                </div>
+                <section class="caminhos">
+                    <h2>Leia Mais:</h2>
+                    <h3>Próximo Artigo</h3>
+                    <div class="card" id="artigo3" onclick="location.href='como_devo_me_hidratar.html';">
+                        <p class="card__titulo">
+                            <a href="#">
+                                Como devo me hidratar?
+                            </a>
+                        </p>
+                        <div class="card__informacao">
+                            <p>
+                                Publicado em: 18/11/21
+                            </p>
+                            <p>
+                                Tempo de Leitura: 10 minutos
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Artigo Anterior</h3>
+                    <div class="card" id="artigo1" onclick="location.href='apresentamos_o_health_plus.html';">
+                        <p class="card__titulo">
+                            <a href="#">
+                                Apresentamos o health+
+                            </a>
+                        </p>
+                        <div class="card__informacao">
+                            <p>
+                                Publicado em: 18/11/21
+                            </p>
+                            <p>
+                                Tempo de Leitura: 2 minutos
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <ul class="footer__sobre">
+            <li>
+                <h4>Sobre o site</h4>
+            </li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Fale conosco</a></li>
+        </ul>
+        <ul class="footer__redes-sociais">
+            <li><h4>Redes sociais</h4></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <ul class="footer__baixo">
+            <li><h4 class="footer__logo">health<span>+</span></h4></li>
+            <li><h4 class="footer__copyright">G Softwares ©</h4></li>
+        </ul>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".nav__ativador").click(function() {
+                $(".nav__menu-lateral").toggleClass("nav__menu-lateral--ativado");
+            });
+            $(".subnav__ativador").click(function() {
+                $(".subnav__dropdown").slideToggle(280);
+                if ($(".subnav-span").text() == "expand_more")
+                    $(".subnav-span").text("expand_less");
+                else ($(".subnav-span").text("expand_more"))
+            });
+        });
+    </script>
+</body>
+</html>

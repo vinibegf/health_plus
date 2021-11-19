@@ -1,0 +1,103 @@
+:root {
+    --ff-um: "Roboto", sans-serif;
+    --fs-um: 1.125rem;
+    --fs-dois: 2.125rem;
+    --fs-tres: 2.25rem;
+    --cor-um: black;
+    --cor-dois: white;
+    --cor-tres: gold;
+}
+
+.artigo {
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+}
+
+.artigo__imagem {
+    padding-top: 3rem;
+    width: 100vw;
+    height: 45vh;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: inset 0px 0px 33px 5px rgba(0,0,0,0.35);
+}
+
+.artigo__conteudo {
+    padding: 2rem 0.7rem 2rem 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.artigo__conteudo > *{
+    margin-bottom: 2rem;
+}
+
+.artigo__titulo {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+}
+
+.artigo__informacoes p {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.artigo__texto {
+    margin-bottom: 6rem;
+}
+
+.artigo__texto p {
+    margin-bottom: 1.5rem;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 49ch;
+}
+
+.caminhos {
+    margin-bottom: 6rem;
+}
+
+.caminhos h2 {
+    margin-bottom: 2rem;
+    font-size: 34px;
+}
+
+.caminhos h3 {
+    margin: 1rem 0 1rem 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    min-height: 12rem;
+    width: 100%;
+    padding: 0.5rem;
+
+    box-shadow: inset 0px 0px 35px 18px rgba(0,0,0,0.3);
+}
+
+.card__titulo {
+    max-width: 13ch;
+
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card__titulo a {
+    color: var(--cor-dois);
+}
+
+.card__informacao p {
+    color: var(--cor-dois);
+
+    font-size: 17px;
+    font-weight: 300;
+}
